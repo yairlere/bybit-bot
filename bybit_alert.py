@@ -18,7 +18,19 @@ def send_push(title, body):
 # ---------- לולאת סריקה ----------
 while True:
     try:
-        r = requests.get("https://api.bybit.com/v5/market/tickers?category=linear").json()
+        response = requests.get("https://api.bybit.com/v5/market/tickers?category=linear")
+
+if response.status_code != 200:
+    print("שגיאה ב-API:", response.status_code)
+    time.sleep(10)
+    continue
+
+try:
+    r = response.json()
+except:
+    print("שגיאה בפענוח JSON")
+    time.sleep(10)
+    continuer = requests.get("https://api.bybit.com/v5/market/tickers?category=linear").json()
         current_time = time.time()
 
         for coin in r["result"]["list"]:
