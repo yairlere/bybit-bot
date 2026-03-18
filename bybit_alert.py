@@ -24,7 +24,11 @@ def send_push(title: str, body: str) -> None:
 
 def fetch_tickers():
     try:
-        response = requests.get(BYBIT_URL, timeout=15)
+        headers = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+response = requests.get(BYBIT_URL, headers=headers, timeout=15)
 
         if response.status_code != 200:
             print(f"שגיאת HTTP מ-Bybit: {response.status_code}", flush=True)
