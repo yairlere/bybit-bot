@@ -232,3 +232,11 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-siz
 .article-cta p { opacity: .92; margin-bottom: 1.5rem; }
 .article-cta .btn { background: #fff; color: var(--sage-dark); border-color: #fff; }
 .article-cta .btn:hover { background: var(--cream); }
+
+/* תגיות בפתיח */
+.hero-badges { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.8rem; }
+.hero-badges li {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 999px;
+  padding: .35rem 1rem; font-size: .95rem; font-weight: 600; color: var(--sage-dark);
+}
+.hero-badges li::before { content: "●"; color: var(--clay); font-size: .6em; vertical-align: middle; margin-inline-end: .5rem; }
