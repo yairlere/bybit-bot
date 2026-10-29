@@ -240,3 +240,47 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-siz
   padding: .35rem 1rem; font-size: .95rem; font-weight: 600; color: var(--sage-dark);
 }
 .hero-badges li::before { content: "●"; color: var(--clay); font-size: .6em; vertical-align: middle; margin-inline-end: .5rem; }
+
+/* ===== אודות – תפקיד ===== */
+.about-role { font-size: 1.15rem; font-weight: 600; color: var(--sage-dark); margin-bottom: 1.2rem; }
+
+/* ===== הגישה הטיפולית ===== */
+.prose p { font-size: 1.1rem; }
+.prose-highlight {
+  margin-top: 2rem !important; padding: 1.4rem 1.6rem; border-inline-start: 4px solid var(--clay);
+  background: var(--paper); border-radius: 0 var(--radius) var(--radius) 0; box-shadow: var(--shadow);
+  font-family: var(--font-head); font-size: 1.25rem !important; line-height: 1.6;
+}
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0 1.6rem; }
+.chips li {
+  background: var(--sage-soft); color: var(--sage-dark); font-weight: 600; font-size: .95rem;
+  padding: .4rem 1rem; border-radius: 999px;
+}
+
+/* ===== סדנאות ===== */
+.groups-band { background: var(--sage-dark); color: #fff; padding: clamp(3.5rem, 8vw, 5.5rem) 0; }
+.groups { display: grid; grid-template-columns: 1fr 1.6fr; gap: 3rem; align-items: start; }
+.groups .eyebrow { color: #f0c3a8; }
+.groups p { opacity: .93; }
+.btn-light { background: #fff; color: var(--sage-dark); border-color: #fff; margin-top: 1.8rem; }
+.btn-light:hover { background: var(--cream); }
+
+/* ===== ניסיון ===== */
+.experience { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.experience li {
+  background: var(--paper); border-radius: var(--radius); padding: 1.6rem 1.8rem;
+  box-shadow: var(--shadow); border-top: 4px solid var(--sage);
+}
+.experience p { color: var(--muted); font-size: 1rem; }
+.training { margin-top: 3.5rem; text-align: center; }
+.training h3 { font-size: 1.6rem; }
+.training .chips { justify-content: center; }
+.training .chips li { background: var(--paper); border: 1px solid var(--line); }
+
+/* מוטו */
+.quote-band cite { max-width: 52ch; margin-inline: auto; font-size: 1.1rem; line-height: 1.7; }
+.quote-band blockquote { max-width: none; }
+
+@media (max-width: 760px) {
+  .groups, .experience { grid-template-columns: 1fr; gap: 1.5rem; }
+}
