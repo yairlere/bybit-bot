@@ -1,5 +1,5 @@
 // ===== הגדרות – יש להחליף במספר האמיתי (פורמט בינלאומי, ללא + וללא 0 בהתחלה) =====
-const WHATSAPP_NUMBER = "972500000000";
+const WHATSAPP_NUMBER = "972504588823";
 
 // תפריט מובייל
 const toggle = document.querySelector(".menu-toggle");
