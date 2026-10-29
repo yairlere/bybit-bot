@@ -206,3 +206,29 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-siz
   .about-photo { width: 100%; max-width: 320px; margin-inline: auto; }
   .lead { max-width: none; }
 }
+
+/* ===== מאמרים ===== */
+.centered { text-align: center; margin-inline: auto; }
+.more-link { margin-top: 2.5rem; }
+.article-card { text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+.article-card h3 { color: var(--ink); }
+.article-card .eyebrow { font-size: .9rem; }
+.read-more { margin-top: auto; padding-top: 1rem; color: var(--sage-dark); font-weight: 700; }
+.back-link { display: inline-block; margin-bottom: 1.5rem; text-decoration: none; font-weight: 600; }
+.article-head { margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+.article-head h1 { font-size: clamp(2rem, 4.5vw, 3rem); }
+.article-head .lead { max-width: none; }
+.article-body h2 { font-size: 1.6rem; margin: 2.5rem 0 .8rem; }
+.article-body ul { margin: 1rem 0; padding-inline-start: 1.4rem; display: grid; gap: .6rem; }
+.article-body li::marker { color: var(--clay); }
+.article-note {
+  margin-top: 2.5rem; padding: 1rem 1.3rem; border-radius: 12px;
+  background: var(--sage-soft); font-size: 1rem;
+}
+.article-cta {
+  margin-top: 3.5rem; padding: 2.2rem; border-radius: var(--radius);
+  background: var(--sage-dark); color: #fff; text-align: center;
+}
+.article-cta p { opacity: .92; margin-bottom: 1.5rem; }
+.article-cta .btn { background: #fff; color: var(--sage-dark); border-color: #fff; }
+.article-cta .btn:hover { background: var(--cream); }

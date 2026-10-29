@@ -16,7 +16,7 @@ nav.querySelectorAll("a").forEach((a) =>
 );
 
 // טופס יצירת קשר – פותח וואטסאפ עם ההודעה
-document.getElementById("contact-form").addEventListener("submit", (e) => {
+document.getElementById("contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
   const text =
