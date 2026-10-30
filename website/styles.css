@@ -284,3 +284,7 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-siz
 @media (max-width: 760px) {
   .groups, .experience { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+
+/* אינסטגרם בתחתית */
+.footer-ig { color: #d9ddd8; text-decoration: none; display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; }
+.footer-ig:hover { color: #fff; }
