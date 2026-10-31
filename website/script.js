@@ -7,6 +7,15 @@ const nav = document.getElementById("nav");
 toggle.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
   toggle.setAttribute("aria-expanded", open);
+  toggle.setAttribute("aria-label", open ? "סגירת תפריט" : "פתיחת תפריט");
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav.classList.contains("open")) {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "פתיחת תפריט");
+    toggle.focus();
+  }
 });
 nav.querySelectorAll("a").forEach((a) =>
   a.addEventListener("click", () => {
@@ -19,10 +28,10 @@ nav.querySelectorAll("a").forEach((a) =>
 document.getElementById("contact-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(e.target);
+  // נשלחים רק שם והודעה; מספר הטלפון ידוע ממילא בוואטסאפ
   const text =
     `שלום, אשמח לקבוע שיחת היכרות.\n` +
-    `שם: ${data.get("name")}\n` +
-    `טלפון: ${data.get("phone")}` +
+    `שם: ${data.get("name")}` +
     (data.get("message") ? `\n${data.get("message")}` : "");
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
 });
