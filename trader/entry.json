@@ -1,0 +1,22 @@
+{
+  "created_by": "trader-entry",
+  "symbol": "AMD",
+  "setup": "orb",
+  "side": "buy",
+  "date": "2026-11-12",
+  "status": "triggered",
+  "time": "11:00 AM",
+  "bar_start": "10:55",
+  "bar_index": 17,
+  "price": 583.99,
+  "level": 578.78,
+  "interval": "5m",
+  "opening_range": {
+    "high": 578.78,
+    "low": 554.9,
+    "minutes": 15
+  },
+  "source": "yahoo",
+  "checked_at": "2026-11-12T21:00:00Z",
+  "reason": "the 10:55 bar closed above the range high"
+}
