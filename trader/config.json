@@ -1,8 +1,8 @@
 {
-  "budget": 17000,
+  "budget": 51000,
   "cash_buffer_pct": 0,
   "max_position_pct": 50,
-  "max_order_usd": 17000,
+  "max_order_usd": 25500,
   "min_order_usd": 5,
   "max_loss_per_trade_usd": 500,
   "max_daily_loss_usd": 1000,
@@ -18,8 +18,13 @@
   "paper": true,
   "blocked": [],
   "allow_options": false,
-  "allow_margin": false,
+  "allow_margin": true,
   "allow_short": false,
   "pdt_guard": false,
-  "sec_user_agent": "Your Name you@example.com"
+  "sec_user_agent": "Your Name you@example.com",
+  "plan_defaults": {
+    "stop": "pct:1",
+    "target": "2R",
+    "note": "own cash 17000, 3x leverage = 51000 buying power"
+  }
 }
